@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: api-gateway
+
+server:
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:certSOA.p12
+    key-store-password: pc2022
+    key-alias: pcSOA
+  port: 8443
+
+zuul:
+  routes:
+    auth:
+      path: /api/auth/**
+      url: http://localhost:8080
+    nodered:
+      path: /api/nodered/**
+      url: https://localhost:1880
