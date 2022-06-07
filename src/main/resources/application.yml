@@ -16,6 +16,6 @@ zuul:
     auth:
       path: /api/auth/**
       url: http://localhost:8080
-    nodered:
-      path: /api/nodered/**
-      url: https://localhost:1880
+    almacenamiento:
+      path: /api/historico/**
+      url: http://localhost:8081

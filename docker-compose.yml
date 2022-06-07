@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  api-gateway:
+    image: lpacha/api-gateway
+    ports:
+      - "443:8443"
