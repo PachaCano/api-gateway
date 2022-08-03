@@ -12,6 +12,7 @@ server:
   port: 8443
 
 zuul:
+  sensitive-headers:
   routes:
     auth:
       path: /api/auth/**
